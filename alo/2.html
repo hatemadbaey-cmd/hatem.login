@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إعلان حصري</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Tajawal', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #FFD700;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .announcement {
+      font-size: 3em;
+      font-weight: bold;
+      line-height: 1.4;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+      animation: glow 2s ease-in-out infinite alternate, floatText 2s ease-in-out infinite alternate;
+      max-width: 90%;
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.5); }
+      50% { text-shadow: 2px 2px 20px rgba(255, 215, 0, 1); }
+      100% { text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.5); }
+    }
+
+    @keyframes floatText {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+
+    /* متجاوب */
+    @media(max-width:600px){
+      .announcement {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="announcement">
+    الآن وبشكل حصري! تم إضافة رصيد إضافي لكل باقة، استمتعوا بالزيادة الفورية!
+  </div>
+
+</body>
+</html>
